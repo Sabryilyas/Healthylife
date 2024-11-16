@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - HealthyLife</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="login-section">
+        <div class="login-container">
+            <h2>HealthyLife Admin</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <div id="admin-panel" class="hidden">
+        <nav class="admin-nav">
+            <div class="nav-logo">
+                <h1>Healthy<span>Life</span></h1>
+                <span class="subtitle">Admin Panel</span>
+            </div>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </nav>
+
+        <div class="main-content">
+            
+            <div class="appointments-section">
+                <h2>Today's Appointments</h2>
+                <div class="date-picker">
+                    <input type="date" id="appointment-date" name="appointment-date">
+                    <button onclick="fetchAppointments()">View Appointments</button>
+                </div>
+                <div id="appointments-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

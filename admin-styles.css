@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+#login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+
+.login-container {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h2 {
+    color: #4040FF;
+    text-align: center;
+    margin: 0 0 2.5rem 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+input {
+    width: 100%;
+    max-width: 320px;
+    padding: 0.875rem 1rem;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4040FF;
+}
+
+button {
+    width: 100%;
+    max-width: 240px;
+    padding: 0.75rem;
+    background-color: #4040FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #3333cc;
+}
+
+
+.admin-nav {
+    background-color: #4040FF;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-logo .subtitle {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.logout-btn {
+    width: auto;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.appointments-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointments-section h2 {
+    color: #4040FF;
+    margin-bottom: 1rem;
+}
+
+.date-picker {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.date-picker input[type="date"] {
+    flex: 1;
+}
+
+.date-picker button {
+    width: auto;
+    white-space: nowrap;
+}
+
+.appointment-card {
+    border: 1px solid #e1e5e9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.appointment-card:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logout-btn {
+        margin-top: 1rem;
+    }
+
+    .date-picker {
+        flex-direction: column;
+    }
+
+    .date-picker button {
+        width: 100%;
+    }
+}
